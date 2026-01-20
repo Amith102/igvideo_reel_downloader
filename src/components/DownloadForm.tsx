@@ -85,25 +85,26 @@ export function DownloadForm() {
                                     <Link2 className="h-5 w-5" />
                                 </div>
                                 <Input
-                                    placeholder="Paste Instagram, YouTube, or Facebook link..."
+                                    placeholder="Paste URL..."
                                     value={url}
                                     onChange={(e) => setUrl(e.target.value)}
-                                    className="pl-12 pr-28 h-16 text-lg bg-white/80 dark:bg-neutral-900/80 backdrop-blur-xl border-neutral-200/50 dark:border-white/10 shadow-xl shadow-blue-500/5 dark:shadow-blue-900/10 rounded-2xl focus:ring-0 focus:border-blue-500/50 transition-all duration-300"
+                                    className="pl-12 pr-[120px] md:pr-32 h-14 md:h-16 text-base md:text-lg bg-white/80 dark:bg-neutral-900/80 backdrop-blur-xl border-neutral-200/50 dark:border-white/10 shadow-xl shadow-blue-500/5 dark:shadow-blue-900/10 rounded-2xl focus:ring-0 focus:border-blue-500/50 transition-all duration-300 placeholder:text-neutral-400"
                                     disabled={loading}
                                 />
-                                <div className="absolute inset-y-0 right-2 flex items-center gap-2">
+                                <div className="absolute inset-y-0 right-2 flex items-center gap-1.5 md:gap-2">
                                     <AnimatePresence>
                                         {!url && (
                                             <motion.div
                                                 initial={{ opacity: 0, x: 10 }}
                                                 animate={{ opacity: 1, x: 0 }}
                                                 exit={{ opacity: 0, x: 10 }}
+                                                className="hidden sm:block"
                                             >
                                                 <Button
                                                     type="button"
                                                     variant="secondary"
                                                     size="sm"
-                                                    className="h-9 px-4 text-xs font-medium rounded-xl bg-neutral-100/50 dark:bg-white/5 hover:bg-neutral-200/50 dark:hover:bg-white/10 text-neutral-600 dark:text-neutral-400 backdrop-blur-md border border-neutral-200/50 dark:border-white/5 transition-all"
+                                                    className="h-9 px-3 md:px-4 text-xs font-medium rounded-xl bg-neutral-100/50 dark:bg-white/5 hover:bg-neutral-200/50 dark:hover:bg-white/10 text-neutral-600 dark:text-neutral-400 backdrop-blur-md border border-neutral-200/50 dark:border-white/5 transition-all"
                                                     onClick={async () => {
                                                         try {
                                                             const text = await navigator.clipboard.readText();
@@ -123,7 +124,7 @@ export function DownloadForm() {
                                         isLoading={loading}
                                         disabled={!url || loading}
                                         size="icon"
-                                        className="h-11 w-11 rounded-xl shadow-lg shadow-blue-500/20 hover:shadow-blue-500/40 bg-gradient-to-tr from-blue-600 to-indigo-600 hover:scale-105 active:scale-95 transition-all duration-300"
+                                        className="h-10 w-10 md:h-11 md:w-11 rounded-xl shadow-lg shadow-blue-500/20 hover:shadow-blue-500/40 bg-gradient-to-tr from-blue-600 to-indigo-600 hover:scale-105 active:scale-95 transition-all duration-300"
                                     >
                                         <Search className="h-5 w-5 text-white" />
                                     </Button>
