@@ -49,14 +49,6 @@ export default function Home() {
         <a href="/how-it-works" className="hover:text-neutral-900 dark:hover:text-neutral-300 transition-colors">How it works</a>
         <a href="/privacy" className="hover:text-neutral-900 dark:hover:text-neutral-300 transition-colors">Privacy</a>
         <a href="/terms" className="hover:text-neutral-900 dark:hover:text-neutral-300 transition-colors">Terms</a>
-        <span className="text-neutral-300 dark:text-neutral-700">|</span>
-        <div className="flex items-center justify-center">
-          <img
-            src="/signature.png"
-            alt="Signature"
-            className="h-10 w-auto opacity-80 hover:opacity-100 transition-opacity dark:invert py-1"
-          />
-        </div>
       </footer>
     </div>
   );
