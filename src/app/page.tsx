@@ -25,9 +25,6 @@ export default function Home() {
       {/* Main Content */}
       <main className="relative w-full max-w-5xl mx-auto px-6 pt-32 pb-20 flex flex-col items-center z-10 text-center min-h-[calc(100vh-80px)]">
         <div className="space-y-6 mb-12 animate-in fade-in slide-in-from-bottom-4 duration-1000">
-          <div className="inline-flex items-center px-3 py-1 rounded-full border border-blue-200 dark:border-blue-900 bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-300 text-xs font-semibold uppercase tracking-wider mb-4">
-            ✨ The Ultimate Social Downloader
-          </div>
           <h1 className="text-4xl md:text-6xl lg:text-8xl font-bold tracking-tighter text-neutral-900 dark:text-white leading-[1.1] md:leading-[0.9]">
             Download <span className="text-transparent bg-clip-text bg-gradient-to-br from-blue-600 via-indigo-500 to-purple-600 dark:from-blue-400 dark:via-indigo-400 dark:to-purple-400">Reels</span>
             <br className="hidden md:block" />
