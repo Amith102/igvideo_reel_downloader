@@ -21,7 +21,6 @@ export default function Home() {
           </span>
           <div className="flex items-center gap-2 md:gap-1.5 text-neutral-600 dark:text-neutral-300 mt-0.5 md:mt-0">
             <Instagram className="w-3 h-3 md:w-5 md:h-5 text-pink-500/80 md:text-pink-500" />
-            <Youtube className="w-3 h-3 md:w-5 md:h-5 text-red-500/80 md:text-red-500" />
           </div>
         </div>
         <ThemeToggle className="glass border-white/20 dark:border-white/10" />
@@ -37,7 +36,7 @@ export default function Home() {
             in Seconds.
           </h1>
           <p className="text-xl md:text-2xl text-neutral-600 dark:text-neutral-400 max-w-2xl mx-auto leading-relaxed font-light">
-            Fast, secure, and visually stunning. Save content from Instagram, YouTube, and Facebook with a single click.
+            Fast, secure, and visually stunning. Save content from Instagram with a single click.
           </p>
         </div>
 
