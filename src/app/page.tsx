@@ -1,5 +1,6 @@
 import { DownloadForm } from "@/components/DownloadForm";
 import { ThemeToggle } from "@/components/ThemeToggle";
+import { Instagram, Youtube } from "lucide-react";
 
 export default function Home() {
   return (
@@ -14,10 +15,14 @@ export default function Home() {
 
       {/* Header */}
       <header className="fixed top-0 w-full p-6 flex justify-between items-center z-50 transition-all duration-300">
-        <div className="glass px-4 py-2 rounded-full flex items-center gap-2">
-          <span className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-violet-600 dark:from-blue-400 dark:to-violet-400">
+        <div className="glass px-5 py-2 rounded-full md:rounded-full flex flex-col md:flex-row items-center gap-0.5 md:gap-3 transition-all duration-300">
+          <span className="text-lg md:text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-violet-600 dark:from-blue-400 dark:to-violet-400 leading-none">
             ReelsDL
           </span>
+          <div className="flex items-center gap-2 md:gap-1.5 text-neutral-600 dark:text-neutral-300 mt-0.5 md:mt-0">
+            <Instagram className="w-3 h-3 md:w-5 md:h-5 text-pink-500/80 md:text-pink-500" />
+            <Youtube className="w-3 h-3 md:w-5 md:h-5 text-red-500/80 md:text-red-500" />
+          </div>
         </div>
         <ThemeToggle className="glass border-white/20 dark:border-white/10" />
       </header>
