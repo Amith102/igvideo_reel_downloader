@@ -28,9 +28,10 @@ export default function Home() {
           <div className="inline-flex items-center px-3 py-1 rounded-full border border-blue-200 dark:border-blue-900 bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-300 text-xs font-semibold uppercase tracking-wider mb-4">
             ✨ The Ultimate Social Downloader
           </div>
-          <h1 className="text-6xl md:text-8xl font-bold tracking-tighter text-neutral-900 dark:text-white leading-[0.9]">
+          <h1 className="text-4xl md:text-6xl lg:text-8xl font-bold tracking-tighter text-neutral-900 dark:text-white leading-[1.1] md:leading-[0.9]">
             Download <span className="text-transparent bg-clip-text bg-gradient-to-br from-blue-600 via-indigo-500 to-purple-600 dark:from-blue-400 dark:via-indigo-400 dark:to-purple-400">Reels</span>
-            <br />
+            <br className="hidden md:block" />
+            <span className="md:hidden"> </span>
             in Seconds.
           </h1>
           <p className="text-xl md:text-2xl text-neutral-600 dark:text-neutral-400 max-w-2xl mx-auto leading-relaxed font-light">
