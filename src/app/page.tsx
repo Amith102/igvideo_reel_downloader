@@ -49,6 +49,8 @@ export default function Home() {
         <a href="/how-it-works" className="hover:text-neutral-900 dark:hover:text-neutral-300 transition-colors">How it works</a>
         <a href="/privacy" className="hover:text-neutral-900 dark:hover:text-neutral-300 transition-colors">Privacy</a>
         <a href="/terms" className="hover:text-neutral-900 dark:hover:text-neutral-300 transition-colors">Terms</a>
+        <span className="text-neutral-300 dark:text-neutral-700">|</span>
+        <span className="font-medium text-neutral-600 dark:text-neutral-400">Built by Amith 🚀</span>
       </footer>
     </div>
   );
